@@ -179,7 +179,7 @@ async function run() {
             const result = await usersCollection.updateOne(filter, makeAdmin);
             res.json(result);
         })
-
+// -------------------
         // get oll users
         app.get('/users', async (req, res) => {
             const users = usersCollection.find({});
